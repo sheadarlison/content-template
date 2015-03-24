@@ -1,0 +1,214 @@
+html, body {
+	width:100vw;
+	height:100vh;
+	margin: 0px;
+	overflow: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+body {
+	background-color:#f2ac00;
+	font-family: 'Lato', sans-serif;
+	color:white;
+	z-index: -1;
+}
+
+/* left side */
+#left-image-bottom {
+	position: absolute; 
+	left:0; 
+	bottom: 0;
+	width: 50vw;
+	height: 100vh;
+	background: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/1D180509DF.jpg); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index:0;
+	-webkit-animation-duration: 40s;
+    -webkit-animation-name: pulse;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	 /* Hey browser, use your GPU */
+   	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#gradient-container {
+	position: absolute;
+	left:0; 
+	bottom: 0;
+	width: 50vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+	z-index:0;
+}
+
+#school-crest {
+	width: 35vw;
+	height: 18vh;
+	left: 3vw;
+	top: 5vh;
+	position: absolute;
+	background: url(https://storage.googleapis.com/risemedialibrary-f114ad26-949d-44b4-87e9-8528afc76ce4/t-univ-2-logo.png); 
+	background-repeat: no-repeat;
+	z-index:10;
+}
+
+/*right side container*/
+#slide-container {
+	position:absolute;
+	width:50vw;
+	height:100vh;
+
+
+}
+
+/* first slide */
+#first-container {
+	position:absolute;
+	width:50vw;
+	height:50vh;
+	top:20vh;
+	left:52vw;
+}
+
+#first-content {
+	position: absolute;
+	left:0;
+	top:0;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-name: slide1;
+	-webkit-animation-iteration-count: infinite;
+
+}
+
+/* Second slide */
+#second-container{
+	position:absolute;
+	width:50vw;
+	height:50vh;
+	top:20vh;
+	left:52vw;
+}
+
+#second-content {
+	position: absolute;
+	left:0;
+	top:0;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-name: slide2;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+/* third slide */
+#third-container{
+	position:absolute;
+	width:50vw;
+	height:50vh;
+	top:20vh;
+	left:52vw;
+}
+
+#third-content {
+	position: absolute;
+	left:0;
+	top:0;
+	-webkit-animation-duration: 20s;
+	-webkit-animation-name: slide3;
+	-webkit-animation-iteration-count: infinite;
+}
+
+
+/* Logo */
+#logo-container{
+	position:absolute;
+	width:20%;
+	height:10%;
+	right:5%;
+	top:88%;
+	text-align: right;
+	z-index: 5;
+	opacity: .5;
+	font-family: times, serif;
+	font-size: 3.6vh;
+}
+
+
+/* Global Classes */
+.header-text {
+	font-family: 'open-sans', sans-serif;
+	font-size: 4.3vw;
+	color: #FFFFFF;
+	
+}
+
+.title {
+	font-size: 6.8vw;
+	font-weight: 600;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1270px) {
+	#first-container {
+		top:20%;
+	}
+	#second-container{
+		top:20%;
+    }
+    #third-container{
+		top:20%;
+    }
+
+}
+
+@media only screen and (min-width: 1280px) {
+	#first-container {
+		top:15%;
+	}
+	#second-container{    
+		top:15%;
+	}
+	#third-container{    
+		top:15%;
+	}
+	
+}
+	
+/* Footer Icons */
+#github {
+	 width:50%;
+	 height:4vh;
+	 left:10%;
+	 top:90%;
+	 z-index:4;
+	 margin-left:-1%;
+	 position:absolute;
+	 z-index:4;
+}
+
+#gitbtn {
+	color:white;
+	font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;	
+	text-decoration: none;
+	font-size:3.6vh;
+	opacity:.5;
+	z-index:4;
+}
+
+#rise {
+	opacity:.5;
+	width:5%;
+	height:4vh;
+	left:5%;
+	top:90%;
+	z-index:5;
+	margin-left:-1%;
+	position:absolute;
+	z-index:5;
+}
+
+#risebtn {
+    width:auto; 
+    height:100%;   
+}
