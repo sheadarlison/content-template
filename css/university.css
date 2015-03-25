@@ -44,14 +44,14 @@ body {
 }
 
 #school-crest {
-	width: 41vw;
-	height: 26vh;
+	width: 30vw;
+	height: 20vh;
 	left: 3vw;
 	top: 5vh;
 	position: absolute;
 	background: url(https://storage.googleapis.com/risemedialibrary-f114ad26-949d-44b4-87e9-8528afc76ce4/t-univ-2-logo.png); 
 	background-size:contain;
-	background-repeat: no-repeat;
+	background-position:center;
 	z-index:10;
 }
 
