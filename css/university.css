@@ -8,7 +8,7 @@ html, body {
 }
 
 body {
-	background-color:#f2ac00;
+	background-color:#c0392b;
 	font-family: 'Lato', sans-serif;
 	color:white;
 	z-index: -1;
@@ -44,16 +44,22 @@ body {
 }
 
 #school-crest {
-	width: 30vw;
-	height: 20vh;
-	left: 3vw;
-	top: 5vh;
+	width: 10vw;
+	height: 22vh;
+	left: 5vw;
 	position: absolute;
-	background: url(https://storage.googleapis.com/risemedialibrary-f114ad26-949d-44b4-87e9-8528afc76ce4/t-univ-2-logo.png); 
-	background-size:contain;
-	background-position:center;
-	background-repeat:no-repeat;
+	background: #c0392b; 
 	z-index:10;
+	
+}
+
+#school-crest h1{
+	font-size: 9vw;
+	font-family: rockwell extra bold;
+	font-weight: 800;
+	text-align: center;
+	color: white;
+	margin: 0px;	
 }
 
 /*right side container*/
@@ -106,10 +112,11 @@ body {
 /* third slide */
 #third-container{
 	position:absolute;
-	width:50vw;
+	width:46vw;
 	height:50vh;
 	top:20vh;
 	left:52vw;
+	right: 2vw;
 }
 
 #third-content {
@@ -140,8 +147,10 @@ body {
 /* Global Classes */
 .header-text {
 	font-family: 'open-sans', sans-serif;
-	font-size: 4.3vw;
+	font-size: 4vw;
 	color: #FFFFFF;
+	line-height: 6vw;
+	word-wrap:break-word;
 	
 }
 
@@ -150,34 +159,10 @@ body {
 	font-weight: 600;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 1270px) {
-	#first-container {
-		top:20%;
-	}
-	#second-container{
-		top:20%;
-    }
-    #third-container{
-		top:20%;
-    }
 
-}
 
-@media only screen and (min-width: 1280px) {
-	#first-container {
-		top:15%;
-	}
-	#second-container{    
-		top:15%;
-	}
-	#third-container{    
-		top:15%;
-	}
 	
-}
-	
-/* Footer Icons 
+/* Footer Icons */
 #github {
 	 width:50%;
 	 height:4vh;
@@ -214,4 +199,3 @@ body {
     width:auto; 
     height:100%;   
 }
-*/
